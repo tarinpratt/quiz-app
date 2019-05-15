@@ -1,0 +1,231 @@
+.hidden {
+    display: none;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  body {
+    background-image: url(https://images.wallpaperscraft.com/image/the_office_tv_series_steve_carell_boss_96802_800x1200.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 0px;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+  .startPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  h2 {
+    text-align: center;
+    font-size: 13px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 175px;
+    padding: 0px;
+    border-radius: 10px;
+  }
+  button {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: black 1px solid;
+    background-color: aliceblue;
+    font-weight: bold;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: rgb(101, 194, 224);
+    border: rgb(151, 151, 10) 3px solid;
+  }
+  fieldset {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .questionPage {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px black solid;
+    border-radius: 10px;
+  }
+  .questionPage button {
+    float: right;
+  }
+  input[type="radio"]:hover {
+    cursor: pointer;
+  }
+  .incorrect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    
+  }
+  .incorrect h3 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .incorrect h4 {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+  }
+  .incorrect img {
+    height: 200px;
+    width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+  }
+  .correct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+     
+  }
+  .correct h3 {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  .correct img {
+    height: 225px;
+    width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+  .js-next-button {
+    margin-bottom: 25px;
+  }
+  
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .results img {
+    height: 160px;
+    width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+  }
+  .results h2 {
+    text-align: center;
+    font-size: 20px;
+  
+  }
+  .results h3 {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+  }
+  
+  .results button {
+    height: 60px;
+  }
+  
+  @media screen and (min-width: 420px){
+    h1 {
+    font-size: 40px;
+    }
+    h2 {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 350px;
+    padding: 0px;
+    border-radius: 10px;
+    }
+  button {
+    width: 200px;
+    height: 50px;
+  }
+  }
+  
+  @media screen and (min-width: 650px){
+  body {
+    background-image: url(https://deltafonts.com/wp-content/uploads/The-Office-tv-logo.png);
+    background-size: cover;
+  }
+    h1 {
+    font-size: 70px;
+    }
+    h2 {
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 500px;
+    padding: 0px;
+    border-radius: 10px;
+    }
+    form {
+      width: 550px;
+    }
+    
+    .incorrect h3 {
+      font-size: 30px;
+    }
+    .incorrect h4 {
+      font-size: 25px;
+    }
+    .correct h3 {
+      font-size: 30px;
+    }
+    .results h2 {
+      font-size: 30px;
+    }
+    .results h3 {
+      font-size: 25px;
+    }
+  }
+  
+  @media screen and (min-width: 1000px){
+    h1 {
+    font-size: 70px;
+    }
+    h2 {
+    text-align: center;
+    font-size: 60px;
+    width: 800px;
+    padding: 0px;
+    border-radius: 10px;
+    }
+    .questionPage {
+      margin-top: 50px;
+    }
+    form {
+      width: 800px;
+    }
+  }
+  
