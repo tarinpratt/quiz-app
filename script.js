@@ -99,7 +99,6 @@ const quizQuestions = [
    let questionScore = 0;
    
    
-   //creates the general layout for question page 
    function createQuestionLayout(){
      if (questionNumber < 10){
    return  `<form>
@@ -132,21 +131,20 @@ const quizQuestions = [
         <button class="js-restart-quiz">Try again?</button>
          <h3>You answered ${questionScore} out of 10 questions correctly!</h3>
          </section>`;
+    }
    }
-   }
-   console.log('`createQuestionLayout` ran');
    
-   //handles the the begin button and takes you to question page
+   
+  
    function handleBeginButton(){
      $('.startPage').on('click', '.js-begin-button', function(event) {
        $('.startPage').remove();
        $('.questionPage').removeClass('hidden');
        $('.questionPage').html(createQuestionLayout());
      })
-     console.log('`handleBeginButton` ran')
    }
    
-   //validates whether the answer is correct or incorrect and returns the according result page
+   
    function validateUserAnswer(){
    const checkedAnswer = $('input:checked').val();
    if (checkedAnswer == correctAnswers[questionNumber]) {
@@ -165,39 +163,36 @@ const quizQuestions = [
            </section>`;
      }
    }
-   //handles the the submit answer button and returns the correct or incorrect result to the DOM
+ 
    function handleSubmitButton(){
        $('.questionPage').on('click', '.js-submit', function(event) {
        $('.questionPage').html(validateUserAnswer());
      })
-      console.log('`handleSubmitButton` ran');
    }
    
        
-    //handles the next button and increments up 1 number to the next object in quizQuestions array to display the next question page to the DOM
+    
    function handleNextButton(){
      $('.questionPage').on('click', '.js-next-button', function(event){
      let newQuestion = questionNumber++;
      $('.questionPage').html(createQuestionLayout());
      })
-     console.log('`handleNextButton` ran')
    }
    
-   //handles when the try again button is clicked and restart the quiz resetting questionNumber and questionScore values to 0. 
+   
    function handleTryAgainButton() {
    $('.questionPage').on('click', '.js-restart-quiz', function(event){
      questionNumber = 0;
      questionScore = 0;
      $('.questionPage').html(createQuestionLayout());
    })
-    console.log('`handleTryAgainButton` ran');
    }
    
    function handleQuiz(){
     handleBeginButton();
     handleSubmitButton();
-   handleNextButton();
-   handleTryAgainButton();
+    handleNextButton();
+    handleTryAgainButton();
    }
-   //when page loads call handleQuiz
+  
    $(handleQuiz);
