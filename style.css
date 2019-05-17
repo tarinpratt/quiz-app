@@ -58,6 +58,12 @@
     border: none;
     border-radius: 10px;
   }
+  label:hover {
+    cursor: pointer;
+  }
+  label {
+      display: block;
+  }
   
   .questionPage {
     margin-top: 20px;
@@ -78,6 +84,7 @@
     border: none;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
+    max-width: 550px;
     
   }
   .incorrect h3 {
