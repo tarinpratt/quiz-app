@@ -108,18 +108,10 @@ const quizQuestions = [
             <div class="scoreCounter">Score: ${questionScore}/10</div>
           <h3>${quizQuestions[questionNumber].question}
           </h3>
-            <input type="radio" name="answers" id="answer1" value="${quizQuestions[questionNumber].answer1}" checked required>
-            <label for="answer1">${quizQuestions[questionNumber].answer1}</label>
-            <br>
-            <input type="radio" name="answers" id="answer2" value="${quizQuestions[questionNumber].answer2}" required>
-            <label for="answer2">${quizQuestions[questionNumber].answer2}</label>
-            <br>
-            <input type="radio" name="answers" id="answer3" value="${quizQuestions[questionNumber].answer3}" required>
-            <label for="answer3">${quizQuestions[questionNumber].answer3}</label>
-            <br>
-            <input type="radio" name="answers" id="answer4" value="${quizQuestions[questionNumber].answer4}" required>
-            <label for="answer4">${quizQuestions[questionNumber].answer4}</label>
-            <br>
+          <label for="answer1"><input type="radio" name="answers" id="answer1" value="${quizQuestions[questionNumber].answer1}" checked required>${quizQuestions[questionNumber].answer1}</label>
+          <label for="answer2"><input type="radio" name="answers" id="answer2" value="${quizQuestions[questionNumber].answer2}" required>${quizQuestions[questionNumber].answer2}</label>
+          <label for="answer3"><input type="radio" name="answers" id="answer3" value="${quizQuestions[questionNumber].answer3}" required>${quizQuestions[questionNumber].answer3}</label>
+          <label for="answer4"><input type="radio" name="answers" id="answer4" value="${quizQuestions[questionNumber].answer4}" required>${quizQuestions[questionNumber].answer4}</label>
             <button class="js-submit">Submit</button>
            </section>
         </fieldset>
