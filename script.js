@@ -1,5 +1,28 @@
 
-const quizQuestions = [
+   
+   const correctAnswers = [
+    '“That’s what she said.”',
+    'Assistant to the Regional Manager',
+    'Putting Dwight’s cellphone above the ceiling tiles and repeatedly calling it. ',
+    'Holly Flax',
+    'Nathaniel Nutmeg',
+    'Shoot Toby twice',
+    'Ryan Howard',
+    'All of the above',
+    'He burned his foot on his George Foreman Grill while grilling bacon beside his bed.',
+    'Oscar and Matt',
+   ];
+   
+   let questionNumber = 0;
+   let questionScore = 0;
+   
+   
+   function createQuestionLayout(){
+     if (questionNumber < 10){
+   return  `<form>
+        <fieldset>
+        <legend hidden>
+           const quizQuestions = [
     {
    num: 1,  
    question:'What is Michael Scott’s infamous catchphrase?',
@@ -81,28 +104,7 @@ const quizQuestions = [
    answer4:'Jim and Pam',
    },
    ];
-   
-   const correctAnswers = [
-    '“That’s what she said.”',
-    'Assistant to the Regional Manager',
-    'Putting Dwight’s cellphone above the ceiling tiles and repeatedly calling it. ',
-    'Holly Flax',
-    'Nathaniel Nutmeg',
-    'Shoot Toby twice',
-    'Ryan Howard',
-    'All of the above',
-    'He burned his foot on his George Foreman Grill while grilling bacon beside his bed.',
-    'Oscar and Matt',
-   ];
-   
-   let questionNumber = 0;
-   let questionScore = 0;
-   
-   
-   function createQuestionLayout(){
-     if (questionNumber < 10){
-   return  `<form>
-        <fieldset>
+        </legend>
          <section class="answerOptions" role="main">
             <div class="questionCounter">Question: ${quizQuestions[questionNumber].num}/10</div>
             <div class="scoreCounter">Score: ${questionScore}/10</div>
