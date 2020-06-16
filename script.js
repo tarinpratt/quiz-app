@@ -1,6 +1,4 @@
-
-   
-   const quizQuestions = [
+const quizQuestions = [
      {
     num: 1,  
     question:'What is Michael Scott’s infamous catchphrase?',

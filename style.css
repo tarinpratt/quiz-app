@@ -7,9 +7,11 @@
   }
   
   body {
-    background-image: url(https://images.wallpaperscraft.com/image/the_office_tv_series_steve_carell_boss_96802_800x1200.jpg); 
+    background-image: url(images/theoffice.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
   
   }
   main {
@@ -58,6 +60,12 @@
     border: none;
     border-radius: 10px;
   }
+  label:hover {
+    cursor: pointer;
+  }
+  label {
+    display: block;
+  }
   
   .questionPage {
     margin-top: 20px;
@@ -78,6 +86,7 @@
     border: none;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
+    max-width: 550px;
     
   }
   .incorrect h3 {
@@ -174,10 +183,6 @@
   }
   
   @media screen and (min-width: 650px){
-  body {
-    background-image: url(https://deltafonts.com/wp-content/uploads/The-Office-tv-logo.png);
-    background-size: cover;
-  }
     h1 {
     font-size: 70px;
     }
