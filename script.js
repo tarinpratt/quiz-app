@@ -182,8 +182,8 @@ const quizQuestions = [
    function handleQuiz(){
     handleBeginButton();
     handleSubmitButton();
-   handleNextButton();
-   handleTryAgainButton();
+    handleNextButton();
+    handleTryAgainButton();
    }
   
    $(handleQuiz);
